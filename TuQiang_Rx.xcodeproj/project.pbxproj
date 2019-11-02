@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07F68A240D7FAADB25ECE0BA /* Pods_TuQiang_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0642565B92E00C34EB4DCEEF /* Pods_TuQiang_Rx.framework */; };
+		9313FF1021EF1E4C006213C2 /* TQUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313FF0F21EF1E4C006213C2 /* TQUserManager.swift */; };
+		9313FF2121EF20FE006213C2 /* TQBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313FF2021EF20FE006213C2 /* TQBaseTableViewCell.swift */; };
+		9313FF2321EF210E006213C2 /* TQBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313FF2221EF210E006213C2 /* TQBaseViewController.swift */; };
+		9313FF2521EF212F006213C2 /* TQBaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313FF2421EF212F006213C2 /* TQBaseNavController.swift */; };
+		9313FF2721EF2148006213C2 /* TQBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313FF2621EF2148006213C2 /* TQBaseView.swift */; };
+		9313FF2921EF2177006213C2 /* TQBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313FF2821EF2177006213C2 /* TQBaseViewModel.swift */; };
+		9313FF2B21EF218D006213C2 /* TQBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313FF2A21EF218D006213C2 /* TQBaseModel.swift */; };
+		9344798E21F85BBA00845BAC /* TQForgetPasswordCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344798D21F85BBA00845BAC /* TQForgetPasswordCtrl.swift */; };
+		9354E3F821F7283F00AAF307 /* TQResetPasswordCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354E3F721F7283F00AAF307 /* TQResetPasswordCtrl.swift */; };
+		935D994D21F0120500ABF2ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935D994721F0120500ABF2ED /* Assets.xcassets */; };
+		935D995421F0124700ABF2ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D995321F0124700ABF2ED /* AppDelegate.swift */; };
+		935D995721F0139A00ABF2ED /* TQCodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D995621F0139A00ABF2ED /* TQCodeButton.swift */; };
+		935D995B21F0156B00ABF2ED /* TQDefineTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D995A21F0156B00ABF2ED /* TQDefineTool.swift */; };
+		935D995D21F017D600ABF2ED /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D995C21F017D600ABF2ED /* UIColor_Extension.swift */; };
+		935D995F21F01DAA00ABF2ED /* TQTitleSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D995E21F01DAA00ABF2ED /* TQTitleSource.swift */; };
+		935D996521F032DD00ABF2ED /* TQNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D996421F032DD00ABF2ED /* TQNetworkTool.swift */; };
+		935D996721F0549A00ABF2ED /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D996621F0549A00ABF2ED /* Response+ObjectMapper.swift */; };
+		93859D5821F9C3B40064FE65 /* NSObject_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93859D5721F9C3B40064FE65 /* NSObject_Extension.swift */; };
+		93A8306721F0724B00220AB4 /* TQProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8306621F0724A00220AB4 /* TQProgressHUD.swift */; };
+		93A8306921F073E900220AB4 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8306821F073E900220AB4 /* String_Extension.swift */; };
+		93ED85FF21F1D4560044C1F8 /* TQTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED85FE21F1D4560044C1F8 /* TQTabBarViewController.swift */; };
+		93ED862021F1D5330044C1F8 /* TQLoginCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED860D21F1D5330044C1F8 /* TQLoginCtrl.swift */; };
+		93ED862121F1D5330044C1F8 /* TQLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED860F21F1D5330044C1F8 /* TQLoginViewModel.swift */; };
+		93ED862221F1D5330044C1F8 /* TQLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED861121F1D5330044C1F8 /* TQLoginModel.swift */; };
+		93ED862321F1D5330044C1F8 /* TQUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED861221F1D5330044C1F8 /* TQUserModel.swift */; };
+		93ED862421F1D5330044C1F8 /* TQLoginInputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED861421F1D5330044C1F8 /* TQLoginInputFieldView.swift */; };
+		93ED862521F1D5330044C1F8 /* TQLoginAccountTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED861521F1D5330044C1F8 /* TQLoginAccountTableView.swift */; };
+		93ED862721F1D5570044C1F8 /* TQHomeCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED862621F1D5570044C1F8 /* TQHomeCtrl.swift */; };
+		93ED862921F1D5650044C1F8 /* TQListCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED862821F1D5650044C1F8 /* TQListCtrl.swift */; };
+		93ED862B21F1D5790044C1F8 /* TQMineCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED862A21F1D5790044C1F8 /* TQMineCtrl.swift */; };
+		93ED862D21F1D5880044C1F8 /* TQWarmCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED862C21F1D5880044C1F8 /* TQWarmCtrl.swift */; };
+		93ED862F21F1D8E80044C1F8 /* TQRegisterProtocolCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED862E21F1D8E80044C1F8 /* TQRegisterProtocolCtrl.swift */; };
+		93ED863121F1DC1E0044C1F8 /* TQResponseBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED863021F1DC1E0044C1F8 /* TQResponseBaseModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0642565B92E00C34EB4DCEEF /* Pods_TuQiang_Rx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuQiang_Rx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4289F89650261124B86B1AA8 /* Pods-TuQiang_Rx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuQiang_Rx.release.xcconfig"; path = "Target Support Files/Pods-TuQiang_Rx/Pods-TuQiang_Rx.release.xcconfig"; sourceTree = "<group>"; };
+		9313FEF921EF1B4A006213C2 /* TuQiang_Rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuQiang_Rx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9313FF0F21EF1E4C006213C2 /* TQUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQUserManager.swift; sourceTree = "<group>"; };
+		9313FF2021EF20FE006213C2 /* TQBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQBaseTableViewCell.swift; sourceTree = "<group>"; };
+		9313FF2221EF210E006213C2 /* TQBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQBaseViewController.swift; sourceTree = "<group>"; };
+		9313FF2421EF212F006213C2 /* TQBaseNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQBaseNavController.swift; sourceTree = "<group>"; };
+		9313FF2621EF2148006213C2 /* TQBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQBaseView.swift; sourceTree = "<group>"; };
+		9313FF2821EF2177006213C2 /* TQBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQBaseViewModel.swift; sourceTree = "<group>"; };
+		9313FF2A21EF218D006213C2 /* TQBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQBaseModel.swift; sourceTree = "<group>"; };
+		9344798D21F85BBA00845BAC /* TQForgetPasswordCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQForgetPasswordCtrl.swift; sourceTree = "<group>"; };
+		9354E3F721F7283F00AAF307 /* TQResetPasswordCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQResetPasswordCtrl.swift; sourceTree = "<group>"; };
+		935D994721F0120500ABF2ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		935D995321F0124700ABF2ED /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		935D995621F0139A00ABF2ED /* TQCodeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQCodeButton.swift; sourceTree = "<group>"; };
+		935D995A21F0156B00ABF2ED /* TQDefineTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQDefineTool.swift; sourceTree = "<group>"; };
+		935D995C21F017D600ABF2ED /* UIColor_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
+		935D995E21F01DAA00ABF2ED /* TQTitleSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQTitleSource.swift; sourceTree = "<group>"; };
+		935D996421F032DD00ABF2ED /* TQNetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQNetworkTool.swift; sourceTree = "<group>"; };
+		935D996621F0549A00ABF2ED /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
+		93859D5721F9C3B40064FE65 /* NSObject_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject_Extension.swift; sourceTree = "<group>"; };
+		93A8306621F0724A00220AB4 /* TQProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQProgressHUD.swift; sourceTree = "<group>"; };
+		93A8306821F073E900220AB4 /* String_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
+		93ED85FE21F1D4560044C1F8 /* TQTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQTabBarViewController.swift; sourceTree = "<group>"; };
+		93ED860D21F1D5330044C1F8 /* TQLoginCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQLoginCtrl.swift; sourceTree = "<group>"; };
+		93ED860F21F1D5330044C1F8 /* TQLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQLoginViewModel.swift; sourceTree = "<group>"; };
+		93ED861121F1D5330044C1F8 /* TQLoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQLoginModel.swift; sourceTree = "<group>"; };
+		93ED861221F1D5330044C1F8 /* TQUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQUserModel.swift; sourceTree = "<group>"; };
+		93ED861421F1D5330044C1F8 /* TQLoginInputFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQLoginInputFieldView.swift; sourceTree = "<group>"; };
+		93ED861521F1D5330044C1F8 /* TQLoginAccountTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQLoginAccountTableView.swift; sourceTree = "<group>"; };
+		93ED862621F1D5570044C1F8 /* TQHomeCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQHomeCtrl.swift; sourceTree = "<group>"; };
+		93ED862821F1D5650044C1F8 /* TQListCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQListCtrl.swift; sourceTree = "<group>"; };
+		93ED862A21F1D5790044C1F8 /* TQMineCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQMineCtrl.swift; sourceTree = "<group>"; };
+		93ED862C21F1D5880044C1F8 /* TQWarmCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQWarmCtrl.swift; sourceTree = "<group>"; };
+		93ED862E21F1D8E80044C1F8 /* TQRegisterProtocolCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQRegisterProtocolCtrl.swift; sourceTree = "<group>"; };
+		93ED863021F1DC1E0044C1F8 /* TQResponseBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQResponseBaseModel.swift; sourceTree = "<group>"; };
+		DB02FE3E721C525BD5293686 /* Pods-TuQiang_Rx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuQiang_Rx.debug.xcconfig"; path = "Target Support Files/Pods-TuQiang_Rx/Pods-TuQiang_Rx.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9313FEF621EF1B4A006213C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F68A240D7FAADB25ECE0BA /* Pods_TuQiang_Rx.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23D397F671365BAE3D974D7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0642565B92E00C34EB4DCEEF /* Pods_TuQiang_Rx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9313FEF021EF1B4A006213C2 = {
+			isa = PBXGroup;
+			children = (
+				9313FEFB21EF1B4A006213C2 /* TuQiang_Rx */,
+				9313FEFA21EF1B4A006213C2 /* Products */,
+				AF76F1FB6467EAAE1B095BF0 /* Pods */,
+				23D397F671365BAE3D974D7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9313FEFA21EF1B4A006213C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9313FEF921EF1B4A006213C2 /* TuQiang_Rx.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9313FEFB21EF1B4A006213C2 /* TuQiang_Rx */ = {
+			isa = PBXGroup;
+			children = (
+				935D995221F0124700ABF2ED /* AppDelegate */,
+				935D995121F0122000ABF2ED /* Utils */,
+				9313FF1521EF1F47006213C2 /* Main */,
+				9313FF1621EF1F57006213C2 /* Third */,
+				935D994621F0120500ABF2ED /* Resource */,
+			);
+			path = TuQiang_Rx;
+			sourceTree = "<group>";
+		};
+		9313FF0E21EF1E2A006213C2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9313FF0F21EF1E4C006213C2 /* TQUserManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		9313FF1121EF1E8F006213C2 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				935D996421F032DD00ABF2ED /* TQNetworkTool.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		9313FF1221EF1F1D006213C2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				93ED85FE21F1D4560044C1F8 /* TQTabBarViewController.swift */,
+				9313FF2221EF210E006213C2 /* TQBaseViewController.swift */,
+				9313FF2421EF212F006213C2 /* TQBaseNavController.swift */,
+				9313FF2621EF2148006213C2 /* TQBaseView.swift */,
+				9313FF2A21EF218D006213C2 /* TQBaseModel.swift */,
+				93ED863021F1DC1E0044C1F8 /* TQResponseBaseModel.swift */,
+				9313FF2821EF2177006213C2 /* TQBaseViewModel.swift */,
+				9313FF2021EF20FE006213C2 /* TQBaseTableViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9313FF1321EF1F2A006213C2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				935D995C21F017D600ABF2ED /* UIColor_Extension.swift */,
+				935D996621F0549A00ABF2ED /* Response+ObjectMapper.swift */,
+				93A8306821F073E900220AB4 /* String_Extension.swift */,
+				93859D5721F9C3B40064FE65 /* NSObject_Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9313FF1421EF1F34006213C2 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				935D995A21F0156B00ABF2ED /* TQDefineTool.swift */,
+				935D995E21F01DAA00ABF2ED /* TQTitleSource.swift */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		9313FF1521EF1F47006213C2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				93ED861B21F1D5330044C1F8 /* Home */,
+				93ED860621F1D5330044C1F8 /* List */,
+				93ED860B21F1D5330044C1F8 /* Login */,
+				93ED861621F1D5330044C1F8 /* Mine */,
+				93ED860121F1D5330044C1F8 /* Warm */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9313FF1621EF1F57006213C2 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		935D994621F0120500ABF2ED /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				935D994721F0120500ABF2ED /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		935D995121F0122000ABF2ED /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				935D995521F0133900ABF2ED /* UI */,
+				9313FF1321EF1F2A006213C2 /* Extension */,
+				9313FF1421EF1F34006213C2 /* Const */,
+				9313FF1221EF1F1D006213C2 /* Base */,
+				9313FF1121EF1E8F006213C2 /* NetWork */,
+				9313FF0E21EF1E2A006213C2 /* Manager */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		935D995221F0124700ABF2ED /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				935D995321F0124700ABF2ED /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		935D995521F0133900ABF2ED /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				935D995621F0139A00ABF2ED /* TQCodeButton.swift */,
+				93A8306621F0724A00220AB4 /* TQProgressHUD.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		93ED860121F1D5330044C1F8 /* Warm */ = {
+			isa = PBXGroup;
+			children = (
+				93ED860221F1D5330044C1F8 /* Ctrls */,
+				93ED860321F1D5330044C1F8 /* ViewModels */,
+				93ED860421F1D5330044C1F8 /* Models */,
+				93ED860521F1D5330044C1F8 /* Views */,
+			);
+			path = Warm;
+			sourceTree = "<group>";
+		};
+		93ED860221F1D5330044C1F8 /* Ctrls */ = {
+			isa = PBXGroup;
+			children = (
+				93ED862C21F1D5880044C1F8 /* TQWarmCtrl.swift */,
+			);
+			path = Ctrls;
+			sourceTree = "<group>";
+		};
+		93ED860321F1D5330044C1F8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		93ED860421F1D5330044C1F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93ED860521F1D5330044C1F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93ED860621F1D5330044C1F8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				93ED860721F1D5330044C1F8 /* Ctrls */,
+				93ED860821F1D5330044C1F8 /* ViewModels */,
+				93ED860921F1D5330044C1F8 /* Models */,
+				93ED860A21F1D5330044C1F8 /* Views */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		93ED860721F1D5330044C1F8 /* Ctrls */ = {
+			isa = PBXGroup;
+			children = (
+				93ED862821F1D5650044C1F8 /* TQListCtrl.swift */,
+			);
+			path = Ctrls;
+			sourceTree = "<group>";
+		};
+		93ED860821F1D5330044C1F8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		93ED860921F1D5330044C1F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93ED860A21F1D5330044C1F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93ED860B21F1D5330044C1F8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				93ED860C21F1D5330044C1F8 /* Ctrls */,
+				93ED860E21F1D5330044C1F8 /* ViewModels */,
+				93ED861021F1D5330044C1F8 /* Models */,
+				93ED861321F1D5330044C1F8 /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		93ED860C21F1D5330044C1F8 /* Ctrls */ = {
+			isa = PBXGroup;
+			children = (
+				93ED860D21F1D5330044C1F8 /* TQLoginCtrl.swift */,
+				93ED862E21F1D8E80044C1F8 /* TQRegisterProtocolCtrl.swift */,
+				9354E3F721F7283F00AAF307 /* TQResetPasswordCtrl.swift */,
+				9344798D21F85BBA00845BAC /* TQForgetPasswordCtrl.swift */,
+			);
+			path = Ctrls;
+			sourceTree = "<group>";
+		};
+		93ED860E21F1D5330044C1F8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				93ED860F21F1D5330044C1F8 /* TQLoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		93ED861021F1D5330044C1F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93ED861121F1D5330044C1F8 /* TQLoginModel.swift */,
+				93ED861221F1D5330044C1F8 /* TQUserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93ED861321F1D5330044C1F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93ED861421F1D5330044C1F8 /* TQLoginInputFieldView.swift */,
+				93ED861521F1D5330044C1F8 /* TQLoginAccountTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93ED861621F1D5330044C1F8 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				93ED861721F1D5330044C1F8 /* Ctrls */,
+				93ED861821F1D5330044C1F8 /* ViewModels */,
+				93ED861921F1D5330044C1F8 /* Models */,
+				93ED861A21F1D5330044C1F8 /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		93ED861721F1D5330044C1F8 /* Ctrls */ = {
+			isa = PBXGroup;
+			children = (
+				93ED862A21F1D5790044C1F8 /* TQMineCtrl.swift */,
+			);
+			path = Ctrls;
+			sourceTree = "<group>";
+		};
+		93ED861821F1D5330044C1F8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		93ED861921F1D5330044C1F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93ED861A21F1D5330044C1F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93ED861B21F1D5330044C1F8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				93ED861C21F1D5330044C1F8 /* Ctrls */,
+				93ED861D21F1D5330044C1F8 /* ViewModels */,
+				93ED861E21F1D5330044C1F8 /* Models */,
+				93ED861F21F1D5330044C1F8 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		93ED861C21F1D5330044C1F8 /* Ctrls */ = {
+			isa = PBXGroup;
+			children = (
+				93ED862621F1D5570044C1F8 /* TQHomeCtrl.swift */,
+			);
+			path = Ctrls;
+			sourceTree = "<group>";
+		};
+		93ED861D21F1D5330044C1F8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		93ED861E21F1D5330044C1F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93ED861F21F1D5330044C1F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF76F1FB6467EAAE1B095BF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB02FE3E721C525BD5293686 /* Pods-TuQiang_Rx.debug.xcconfig */,
+				4289F89650261124B86B1AA8 /* Pods-TuQiang_Rx.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9313FEF821EF1B4A006213C2 /* TuQiang_Rx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9313FF0B21EF1B4D006213C2 /* Build configuration list for PBXNativeTarget "TuQiang_Rx" */;
+			buildPhases = (
+				F2205F630BAE17116F980AFC /* [CP] Check Pods Manifest.lock */,
+				9313FEF521EF1B4A006213C2 /* Sources */,
+				9313FEF621EF1B4A006213C2 /* Frameworks */,
+				9313FEF721EF1B4A006213C2 /* Resources */,
+				5E4910F7BDCEC4C8A46D8D19 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TuQiang_Rx;
+			productName = TuQiang_Rx;
+			productReference = 9313FEF921EF1B4A006213C2 /* TuQiang_Rx.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9313FEF121EF1B4A006213C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = XieLB;
+				TargetAttributes = {
+					9313FEF821EF1B4A006213C2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 9313FEF421EF1B4A006213C2 /* Build configuration list for PBXProject "TuQiang_Rx" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9313FEF021EF1B4A006213C2;
+			productRefGroup = 9313FEFA21EF1B4A006213C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9313FEF821EF1B4A006213C2 /* TuQiang_Rx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9313FEF721EF1B4A006213C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935D994D21F0120500ABF2ED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E4910F7BDCEC4C8A46D8D19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuQiang_Rx/Pods-TuQiang_Rx-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuQiang_Rx/Pods-TuQiang_Rx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2205F630BAE17116F980AFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuQiang_Rx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9313FEF521EF1B4A006213C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9313FF1021EF1E4C006213C2 /* TQUserManager.swift in Sources */,
+				9313FF2521EF212F006213C2 /* TQBaseNavController.swift in Sources */,
+				935D996721F0549A00ABF2ED /* Response+ObjectMapper.swift in Sources */,
+				93ED862421F1D5330044C1F8 /* TQLoginInputFieldView.swift in Sources */,
+				93ED862021F1D5330044C1F8 /* TQLoginCtrl.swift in Sources */,
+				93ED862221F1D5330044C1F8 /* TQLoginModel.swift in Sources */,
+				93ED862521F1D5330044C1F8 /* TQLoginAccountTableView.swift in Sources */,
+				93859D5821F9C3B40064FE65 /* NSObject_Extension.swift in Sources */,
+				9313FF2921EF2177006213C2 /* TQBaseViewModel.swift in Sources */,
+				93ED862F21F1D8E80044C1F8 /* TQRegisterProtocolCtrl.swift in Sources */,
+				93A8306921F073E900220AB4 /* String_Extension.swift in Sources */,
+				935D995B21F0156B00ABF2ED /* TQDefineTool.swift in Sources */,
+				93A8306721F0724B00220AB4 /* TQProgressHUD.swift in Sources */,
+				93ED862D21F1D5880044C1F8 /* TQWarmCtrl.swift in Sources */,
+				93ED85FF21F1D4560044C1F8 /* TQTabBarViewController.swift in Sources */,
+				935D995421F0124700ABF2ED /* AppDelegate.swift in Sources */,
+				93ED863121F1DC1E0044C1F8 /* TQResponseBaseModel.swift in Sources */,
+				935D995D21F017D600ABF2ED /* UIColor_Extension.swift in Sources */,
+				9313FF2721EF2148006213C2 /* TQBaseView.swift in Sources */,
+				93ED862121F1D5330044C1F8 /* TQLoginViewModel.swift in Sources */,
+				93ED862921F1D5650044C1F8 /* TQListCtrl.swift in Sources */,
+				9344798E21F85BBA00845BAC /* TQForgetPasswordCtrl.swift in Sources */,
+				9313FF2B21EF218D006213C2 /* TQBaseModel.swift in Sources */,
+				93ED862B21F1D5790044C1F8 /* TQMineCtrl.swift in Sources */,
+				935D995721F0139A00ABF2ED /* TQCodeButton.swift in Sources */,
+				9313FF2121EF20FE006213C2 /* TQBaseTableViewCell.swift in Sources */,
+				935D995F21F01DAA00ABF2ED /* TQTitleSource.swift in Sources */,
+				93ED862321F1D5330044C1F8 /* TQUserModel.swift in Sources */,
+				9313FF2321EF210E006213C2 /* TQBaseViewController.swift in Sources */,
+				93ED862721F1D5570044C1F8 /* TQHomeCtrl.swift in Sources */,
+				9354E3F821F7283F00AAF307 /* TQResetPasswordCtrl.swift in Sources */,
+				935D996521F032DD00ABF2ED /* TQNetworkTool.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9313FF0921EF1B4D006213C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9313FF0A21EF1B4D006213C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9313FF0C21EF1B4D006213C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB02FE3E721C525BD5293686 /* Pods-TuQiang_Rx.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N79NWV53J9;
+				INFOPLIST_FILE = "$(SRCROOT)/TuQiang_Rx/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xielb.TuQiang-Rx";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9313FF0D21EF1B4D006213C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4289F89650261124B86B1AA8 /* Pods-TuQiang_Rx.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N79NWV53J9;
+				INFOPLIST_FILE = "$(SRCROOT)/TuQiang_Rx/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xielb.TuQiang-Rx";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9313FEF421EF1B4A006213C2 /* Build configuration list for PBXProject "TuQiang_Rx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9313FF0921EF1B4D006213C2 /* Debug */,
+				9313FF0A21EF1B4D006213C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9313FF0B21EF1B4D006213C2 /* Build configuration list for PBXNativeTarget "TuQiang_Rx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9313FF0C21EF1B4D006213C2 /* Debug */,
+				9313FF0D21EF1B4D006213C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9313FEF121EF1B4A006213C2 /* Project object */;
+}
